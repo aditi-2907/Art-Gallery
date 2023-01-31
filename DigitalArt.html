@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="DigitalArt.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1625334666162-8ad10e7332d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+                </div>
+                <div class="details">
+                    <h3>The Day of Life 38187 | Digital Art<br><span>Rs.490</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1627163439134-7a8c47e08208?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80">
+                </div>
+                <div class="details">
+                    <h3>A moment of joy 8397 | Digital Art<br><span>Rs.900</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1641391503184-a2131018701b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80">
+                </div>
+                <div class="details">
+                    <h3>A void 83753 | Digital Art<br><span>Rs.870</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://blog.icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg">
+                </div>
+                <div class="details">
+                    <h3>Nature Works 12308 | Digital Art<br><span>Rs.695</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80">
+                </div>
+                <div class="details">
+                    <h3>A virtual expression 2981 | Digital Art<br><span>Rs.3,191</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1633443732847-a7ef42868dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div class="details">
+                    <h3>Bass Player 8371 | Digital Art<br><span>Rs.500</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1625014618427-fbc980b974f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80">
+                </div>
+                <div class="details">
+                    <h3>The Day Light 28197 | Digital Art<br><span>Rs.954</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1634658340808-9abaef7eb9a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80">
+                </div>
+                <div class="details">
+                    <h3>Born to be Real 33291| Digital Art<br><span>Rs.1,300</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1633743252577-ccb68cbdb6ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+                </div>
+                <div class="details">
+                    <h3>Coming of Age 24839 | Digital Art<br><span>Rs.879</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+           loop: true,
+           autoplay: {
+           delay: 500,
+           disableOnInteraction: false,
+        },
+        });
+      </script>
+</body>
+</html>

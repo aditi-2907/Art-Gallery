@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DBMS Project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        body {
+            background-size: cover;
+            background-position: cover;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            padding-left: 30px;
+            padding-right: 10px;
+            padding-top: 20px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 80px;
+            height: 100px;
+            width: 120px;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 70px;
+        }
+
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 25px;
+            color: rebeccapurple;
+            font-family: "Georgia", serif;
+        }
+
+        nav ul li button {
+            font-size: 25px;
+            color: red;
+            outline: none;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-family: "Georgia", serif;
+        }
+
+        nav ul li button:hover {
+            color: greenyellow;
+        }
+
+        nav ul li a:hover {
+            color: palevioletred;
+        }
+    </style>
+    <header>
+        <div class="logo"><a href="#"><img src="6141a73936f5482997019a29ffed55bc.png"></a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='file:///C:/Users/shrey/.vscode/extensions/letsee.html#'>Home</a></li>
+                    <li><a href='#About Us'>About Us</a></li>
+                    <li><a href='#Categories'>Categories</a></li>
+                    <li><a href='#Contact'>Contact</a></li>
+                    <li><a href="login.html">
+                            <button class='loginbtn'
+                                onclick="document.getElementById('login.html').style.display='block'"
+                                style="width:auto;">Login</button></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <style>
+        .carousel-item {
+            height: 55vh;
+            min-height: 300px;
+            background: no-repeat scroll center scroll;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        carousel-item::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #000;
+            opacity: 0.7;
+        }
+
+        .carousel-caption {
+            bottom: 26px;
+            padding-left: 70px;
+            padding-right: 70px;
+            font-family: "Georgia", serif;
+        }
+
+        .carousel-caption p {
+            font-size: 10px;
+            top: 2rem;
+        }
+    </style>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="yess.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>SUBLIME</h4>
+                    <h5>Artworks that will tickle your imagination.</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="twofinal.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>SOPHISTICATED</h4>
+                    <h5>Masterpieces that last a lifetime.</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="threefinal.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>EXQUISITE</h4>
+                    <h5>Crafts that are truly impressive.</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <p></p>
+    <style>
+        h2 {
+            font-family: "Georgia", serif;
+        }
+
+        h5 {
+            font-family: "Georgia", serif;
+        }
+    </style>
+    <a name="About Us">
+        <center>
+            <p>
+            <h2><u>ABOUT US!</u></h2>
+            <p></p>
+            <h5>The Illuminati Gallery is a fast growing online art gallery, connecting people with art and artists they
+                love.</h5>
+            <h5>We offer a beautiful selection of paintings, drawings, sculpture, design, figurative, illustrative art
+            </h5>
+            <h5>and photography in various price ranges. We provide a platform for artists around the world with an</h5>
+            <h5>expertly curated environment in which to exhibit and sell their work. in addition to this, </h5>
+            <h5>for a very small fee artists may exhibit an art selection of their choice, with the possibility</h5>
+            <h5>to communicate directly with art lovers. If the artist wishes, it is possible to build a larger</h5>
+            <h5>profile with links to his/her own website. Our aim is to connect art lovers directly with the artists.
+            </h5>
+            </p>
+        </center>
+    </a>
+    <p></p>
+
+    <!-- <hr style="height:5%; border-width:4px; margin-top:3%">
+    </hr>  -->
+
+    <style>
+        h1 {
+            font-family: "Georgia", serif;
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+    <a name="Categories"></a>
+    <center>
+        <h1><u><i>ALL CATEGORIES</i></u></h1>
+    </center>
+
+    <style>
+        .row {
+            background-color: black;
+        }
+
+        .column {
+            margin: 13px;
+            ;
+            margin-top: 30px;
+            margin-left: 130px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .column {
+            width: 30%;
+            height: 36vh;
+            display: flex;
+        }
+
+        .column img {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid black;
+        }
+
+        .column {
+            float: center;
+            width: 8%;
+            padding: 0.5px;
+            font-family: "Georgia", serif;
+            color: aliceblue;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div id="banner" style="overflow: hidden; display: inline-block;">
+        <div class="row">
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href='abstract.html'><img
+                                src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Abstract</h4>
+                        <p>Energy and motion made visible.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="charcoal.html">
+                            <img src="https://images.unsplash.com/photo-1549277513-f1b32fe1f8f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Charcoal</h4>
+                        <p>Art is expression and passion.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="DigitalArt.html">
+                            <img src="https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Digital Art</h4>
+                        <p>Art is a line around our thoughts.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="Figurative.html">
+                            <img src="https://images.unsplash.com/photo-1576504739289-f8615a955658?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=677&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Figurative</h4>
+                        <p>Exploring the thoughts within.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="Floral.html">
+                            <img src="https://images.unsplash.com/photo-1579167728798-a1cf3d595960?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Floral</h4>
+                        <p>Creativity where the mind is set free. </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .column {
+            margin: 13px;
+            ;
+            margin-top: 30px;
+            margin-left: 130px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .column {
+            width: 30%;
+            height: 40vh;
+            display: flex;
+        }
+
+        .column img {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid black;
+        }
+
+        .column {
+            float: center;
+            width: 8%;
+            padding: 0.5px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div id="banner" style="overflow: hidden; display: inline-block;">
+        <div class="row">
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="Illustrative.html">
+                            <img src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Illustrative</h4>
+                        <p>Everything you can imagine is real.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="Paintings.html">
+                            <img src="https://images.unsplash.com/photo-1579762593131-b8945254345c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1254&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Paintings</h4>
+                        <p>Every canvas has a journey.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="patterns.html">
+                            <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Patterns</h4>
+                        <p>A pattern tends to stay in motion.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="photography.html">
+                            <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Photography</h4>
+                        <p>To understand what life really is.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="zoom-circle">
+                    <figure>
+                        <a href="sculptures.html">
+                            <img src="https://images.unsplash.com/photo-1568889505974-c48abfd23878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                                alt=""></a>
+                    </figure>
+                    <center>
+                        <h4>Sculptures</h4>
+                        <p>A shadow of the divine perfection.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    </hr>
+
+    <a name="Contact">
+        <footer class="footer">
+            <div class="container">
+                <div class="row3">
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#About Us">about us</a></li>
+                            <li><a href="buy.html">order</a></li>
+                            <li><a href="https://thenetgallery.com/our-services/">our services</a></li>
+                            <li><a href="https://www.all-about-photo.com/privacy.php">privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>hours for portland location</h4>
+                        <ul>
+                            <li><a href="">Monday: 9:00 AM - 4:00 PM</a></li>
+                            <li><a href="">Tuesday: 10:00 AM - 5:00 PM</a></li>
+                            <li><a href="">Wednesday: 8:00 AM - 2:00 PM</a></li>
+                            <li><a href="">Thursday - Saturday: 10:00 AM - 6:00 PM</a></li>
+                            <li><a href="">Sunday: 11:00 AM - 3:00 PM</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Address</h4>
+                        <ul>
+                            <li><a
+                                    href="https://www.google.com/maps/place/251+US-1,+Falmouth,+ME+04105,+USA/@43.7243127,-70.2323033,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb2835f2be1c1b7:0x8ddf268007c1e276!8m2!3d43.7243127!4d-70.2301146">ILLUMINATI
+                                    GALLERY</a>
+                            </li>
+                            <li><a
+                                    href="https://www.google.com/maps/place/251+US-1,+Falmouth,+ME+04105,+USA/@43.7243127,-70.2323033,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb2835f2be1c1b7:0x8ddf268007c1e276!8m2!3d43.7243127!4d-70.2301146">251
+                                    Route One</a></li>
+                            <li><a
+                                    href="https://www.google.com/maps/place/251+US-1,+Falmouth,+ME+04105,+USA/@43.7243127,-70.2323033,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb2835f2be1c1b7:0x8ddf268007c1e276!8m2!3d43.7243127!4d-70.2301146">Falmouth</a>
+                            </li>
+                            <li><a
+                                    href="https://www.google.com/maps/place/251+US-1,+Falmouth,+ME+04105,+USA/@43.7243127,-70.2323033,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb2835f2be1c1b7:0x8ddf268007c1e276!8m2!3d43.7243127!4d-70.2301146">ME,
+                                    207-781-2620</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/onlinegallery"><i class="fab fa-facebook"></i></a>
+                            <a href="https://mobile.twitter.com/artinbritain"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/onlinegalleryart/?hl=en"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a
+                                href="https://in.linkedin.com/posts/contemporary-art-gallery-online-3a6a2645_good-morning-everyone-you-know-that-feeling-activity-6922137386910941185-E0VO?trk=public_profile_like_view"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

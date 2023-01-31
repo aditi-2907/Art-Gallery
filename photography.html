@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="photography.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://3.imimg.com/data3/YY/VJ/MY-16181548/creative-portraiture-500x500.png">
+                </div>
+                <div class="details">
+                    <h3>Fishermans Cove 13167 | Fine Art Photography<br><span>Rs.550</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1586734073732-fd664fbd85c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3JlYXRpdmUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80">
+                </div>
+                <div class="details">
+                    <h3>Beach Days IV 13008 | Fine Art Photography<br><span>Rs.490</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://www.rangefinderonline.com/wp-content/uploads/2021/02/FB_IMG_1593798736772.jpg">
+                </div>
+                <div class="details">
+                    <h3>Venice 13024 | Fine Art Photography<br><span>Rs.550</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/Coffee-photography-tutorial-1.jpg">
+                </div>
+                <div class="details">
+                    <h3>Caf? View 13022 | Fine Art Photography<br><span>Rs.610</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://i0.wp.com/streetphotographie.fr/wp-content/uploads/2020/12/San-Sebastian-1-e1640854737217.jpg?fit=1024%2C683&ssl=1">
+                </div>
+                <div class="details">
+                    <h3>Rue Chanoinesse 13037 | Fine Art Photography<br><span>Rs.800</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://thumbs.dreamstime.com/b/plume-hand-written-letter-plume-hand-written-letter-detail-158930432.jpg">
+                </div>
+                <div class="details">
+                    <h3>Plume Letters III 13039 | Fine Art Photography<br><span>Rs.900</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://i1.adis.ws/i/canon/pro-fine-art-photography-tips-1_a956e5554f9143789db8e529c097e410">
+                </div>
+                <div class="details">
+                    <h3>Stokksnes 12923 | Fine Art Photography<br><span>Rs.780</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://picturedrocks.com/wp-content/uploads/2021/05/Pictured-Rocks-Grand-Portal-November-2016.jpg">
+                </div>
+                <div class="details">
+                    <h3>Pictured Rocks Michigan 13116 | Photography<br><span>Rs.1,000</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.unsplash.com/photo-1533617453489-a0160c0aee24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80">
+                </div>
+                <div class="details">
+                    <h3>Banff Canoe Dock 12911 | Fine Art Photography<br><span>Rs.800</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+           loop: true,
+           autoplay: {
+           delay: 500,
+           disableOnInteraction: false,
+        },
+        });
+      </script>
+</body>
+</html>

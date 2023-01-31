@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="buy.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="buy.php" method="post">
+        <div class="row">
+            <div class="col">
+
+                <h3 class="title">Order Art</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="divyam mishra" name="fullname">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com" name="email">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality" name="address">
+                </div>
+                <div class="inputBox">
+                    <span>Art name :</span>
+                    <input type="text" placeholder="Divergent" name="name">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Order ID :</span>
+                        <input type="number" placeholder="1332" name="OrderID">
+                    </div>
+                    <div class="inputBox">
+                        <span>Order Category :</span>
+                        <input type="text" placeholder="Painting" name="category">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="C:\Users\shrey\AppData\Local\Temp\Temp1_payment gateway (2).zip\payment gateway\images\card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. divyam mishra" name="card">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" name="number">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="August" name="month">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2025" name="year">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123" name="CVV">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>

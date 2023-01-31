@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sculptures</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="sculptures.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://static.designboom.com/wp-content/uploads/2022/07/jeff-koons-apollo-deste-foundation-greece-hydra-designboom-700-400x320-22b08q85r607.jpg">
+                </div>
+                <div class="details">
+                    <h3>Toscano Easter 6432 | Sculptures<br><span>Rs.701</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://b4s5x6t6.stackpathcdn.com/wp-content/uploads/2019/11/famous-sculpture-nike-samothrace.jpg">
+                </div>
+                <div class="details">
+                    <h3>Medieval 2991 | Sculptures<br><span>Rs.2,791</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://www.artzolo.com/sites/default/files/styles/blog/public/blog/images/cover_image_11.jpg">
+                </div>
+                <div class="details">
+                    <h3>Indian History 1123 | Sculptures<br><span>Rs.550</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://www.artzolo.com/sites/default/files/blog/images/1280px-le_penseur_de_la_porte_de_lenfer_musee_rodin_4528252054.jpg">
+                </div>
+                <div class="details">
+                    <h3>The Lover Lane 1531 | Sculptures<br><span>Rs.980</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://cdn.trendhunterstatic.com/thumbs/abstract-clay-sculpture.jpeg?auto=webp">
+                </div>
+                <div class="details">
+                    <h3>Existing World 7719 | Sculptures<br><span>Rs.670</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://ospreystudios.files.wordpress.com/2017/09/p9063523.jpg?w=276&h=145">
+                </div>
+                <div class="details">
+                    <h3>Soulful Magic! 6872 | Sculptures<br><span>Rs.3,211</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://images.saatchiart.com/saatchi/663603/art/8084711/7151597-TATIUGBZ-6.jpg">
+                </div>
+                <div class="details">
+                    <h3>Lakeshore Delights 8889 | Sculptures<br><span>Rs.450</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://img.artlogic.net/w_1010,h_580,c_limit/exhibit-e/5b7c888b6aa72c622d8b4567/b2fcde6b1a19a93cda3a047689b6fcc0.jpeg">
+                </div>
+                <div class="details">
+                    <h3>Boundless 9000 | Sculptures<br><span>Rs.651</span></h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="https://ospreystudios.files.wordpress.com/2017/09/p9063541.jpg?w=271&h=182">
+                </div>
+                <div class="details">
+                    <h3>Limitless 9009 | Sculptures<br><span>Rs.1,100</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+           loop: true,
+           autoplay: {
+           delay: 500,
+           disableOnInteraction: false,
+        },
+        });
+      </script>
+</body>
+</html>
